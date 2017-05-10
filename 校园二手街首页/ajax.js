@@ -1,0 +1,9 @@
+$(function(){
+	$("#button").click(function(){
+		$.get("homepage.php",{
+			search:("#search").val()
+		},function(data){
+			$("div").html(data);
+		})
+	})
+})

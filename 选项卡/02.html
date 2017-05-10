@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<script type="text/javascript">
+		window.onload=function(){
+			var ali=document.getElementsByTagName('li');
+			var adl=document.getElementsByTagName('dl');
+			for (var i = 0; i < ali.length; i++) {
+				ali[i].index=i;
+				ali[i].onmouseover=function(){
+					for (var i = 0; i < ali.length; i++) {
+					adl[i].style.display="none";
+					ali[i].className="";
+					}
+				this.className="active";
+				 adl[this.index].style.display="block";
+			}
+			ali[i].onmouseout=function(){
+					for (var i = 0; i < ali.length; i++) {
+					adl[i].style.display="none"
+					ali[i].className=" ";
+
+					}
+				// this.className=" ";
+				// adl[this.index].style.display="none";
+				
+			}
+			
+	
+    }
+}	
+</script>
+		<style type="text/css">
+		ul,dl,img,div,body{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			width: 500px;
+			height: 40px;
+			margin: 100px auto;
+
+			border: 1px solid black;
+			
+			margin-bottom: 0px;
+			}
+
+
+		ul	li{
+				float: left;
+				width:33.33%;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				list-style-type: none;
+				
+				
+			}
+     
+      .active{
+      	background: blue;
+      }
+      
+			dl{
+				width: 502px;
+				height: 100px;
+				background: green;
+				margin: 0 auto;
+			   border: 1px solid black;
+			   display: none;
+			}
+
+	.one{
+		background: yellow;
+		}
+  .two{
+  	background: red;
+		
+}
+	</style>
+  
+      
+</head>
+<body>
+<ul>
+	<li>网站首页</li>
+	<li>更多信息</li>
+	<li>联系我们</li>
+</ul>
+	<dl></dl>
+	<dl class="one"></dl>
+	<dl class="two"></dl>
+	
+</body>
+</html>

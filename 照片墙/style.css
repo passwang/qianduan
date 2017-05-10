@@ -1,0 +1,55 @@
+h1{
+	text-align: center;
+}
+.box{
+	width: 1500px;
+	height: 1500px;
+	background: #EEEEEE;
+	position: relative;
+	z-index: 1;
+}
+img{
+	padding: 10px 10px;
+	background: white;
+	border:1px solid #CFC8D2;
+	position: absolute;
+	box-shadow: 10px 10px #A7AFB2;
+	transition: linear 1s;
+    z-index: 1;
+
+}
+img:hover{
+	-webkit-transform:rotate(0deg)scale(1.2);
+	 
+	-moz-transform:rotate(0deg) scale(1.2);
+	transform:rotate(0deg) scale(1.2);
+	z-index: 2;
+}
+.one{
+	top: 100px;
+	left: 200px;
+	-webkit-transform:rotate(30deg) scale(1);
+	-moz-transform:rotate(30deg) scale(1);
+	transform:rotate(30deg) scale(1);
+}
+.two{
+	top: 100px;
+	left: 400px;
+	-webkit-transform:rotate(-30deg) scale(1);
+	-moz-transform:rotate(-30deg) scale(1);
+	transform:rotate(-30deg) scale(1);
+}
+.three{
+	top: 300px;
+	left: 500px;
+	-webkit-transform:rotate(10deg) scale(1);
+	-moz-transform:rotate(10deg) scale(1);
+	transform:rotate(10deg) scale(1);
+}
+.four{
+	top: 300px;
+	left: 600px;
+	-webkit-transform:rotate(-10deg) scale(1);
+	-moz-transform:rotate(-10deg) scale(1);
+	transform:rotate(-10deg) scale(1);
+}

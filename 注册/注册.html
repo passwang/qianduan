@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="zhuce.css">
+	
+</head>
+<body>
+	<form method="get" onsubmit=" return check();" action="http://www.baidu.com" >
+	<div>
+	    <label>
+	    	<span>用户名:</span>
+	    	<input type="text" class="text"></input>
+	    </label>
+		<p>
+		  <i></i>
+			5-20个字符,一个汉字为两个字符，推荐使用中文
+		</p>
+	</div>
+	<div>
+		<label>
+			<span></span>
+			<b>0个字符</b>
+		</label>
+	</div>
+	    <div>
+			<label>
+				<span>登录密码:</span>
+				<input type="password" class="text"></input>
+			</label>
+			<p>
+				<i></i>
+			     5-26个字符,请使用字母加数字或符号的组合密码,不能单独使用字母,数字或符号
+			</p>
+		</div>
+		<div>
+			<label>
+				<span></span>
+				<em class="active">弱</em><em>中</em><em>强</em>
+			</label>
+		</div>
+		 <div>
+			<label>
+				<span>确认密码:</span>
+				<input type="password" disabled="" class="text"></input>
+			</label>
+			<p>
+			   <i></i>
+				请再输入一次
+			</p>
+		</div>
+		<div style="margin: 10px 0">
+			<label>
+				<span>验证码:</span>
+				<input type="text" style="width:60px; height:25px " class="text"  ></input>
+				<span id="code"></span><a href="javascript:;" title="重新获取验证码" onclick="createCode();"><img src="images/04.png"></a>
+			</label>
+			<p class="top"><i></i>请输入验证码</p>
+		</div>
+		<div>
+		<label>
+		<span></span>
+		<input type="submit" id="submit" value="同意协议并注册" class="button" ></input>
+		</label>
+		</div>
+	</form>
+	<script type="text/javascript" src="zhuce.js"></script>
+</body>
+</html>
